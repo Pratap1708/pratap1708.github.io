@@ -1,0 +1,12 @@
+input {
+  font-size: 60px;
+  background: grey;
+  outline: none;
+  border: 0;
+  border-bottom: 5px solid #fff;
+  display: block;
+  margin: 25px 0; }
+
+::placeholder {
+  color: #ff9;
+  text-decoration: italics; }

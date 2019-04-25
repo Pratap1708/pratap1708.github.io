@@ -1,0 +1,15 @@
+.link-container {
+	margin-top: 0;
+	background: grey;
+	display: inline-block;
+
+	li {
+		color: #fff;
+		list-style: none;
+		display: inline-block;
+		margin: 30px 20px;
+		.fa {
+			margin-right: 10px;
+		}
+	}
+}

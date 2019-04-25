@@ -1,0 +1,53 @@
+.link-container {
+  margin-top: 0;
+  background: grey;
+  display: inline-block; }
+  .link-container li {
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    margin: 30px 20px; }
+    .link-container li .fa {
+      margin-right: 10px; }
+
+.main-container .result-tile {
+  width: 19%;
+  float: left;
+  text-align: center;
+  min-height: 300px;
+  border: 1px solid #000; }
+
+input {
+  font-size: 60px;
+  background: grey;
+  outline: none;
+  border: 0;
+  border-bottom: 5px solid #fff;
+  display: block;
+  margin: 25px 0; }
+
+::placeholder {
+  color: #ff9;
+  text-decoration: italics; }
+
+#root {
+  background: #a56; }
+
+.App {
+  min-height: 1500px;
+  background: grey;
+  margin: 0 auto;
+  Padding: 0 40px;
+  color: #fff; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }

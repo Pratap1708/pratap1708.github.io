@@ -1,0 +1,6 @@
+.main-container .result-tile {
+  width: 19%;
+  float: left;
+  text-align: center;
+  min-height: 300px;
+  border: 1px solid #000; }
