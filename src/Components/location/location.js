@@ -6,15 +6,14 @@ class Locaion extends Component {
 	 constructor(){
 	    super();
 	    this.state = {
-	    	city: ''
+	    	citySearched: ''
 	    };
 
 	    this.handleChange = this.handleChange.bind(this);
 	 }
-
 	handleChange(event) {
 	    this.setState({
-	    	city: event.target.value
+	    	citySearched: event.target.value
 	    });
 	}
 
@@ -34,9 +33,9 @@ class Locaion extends Component {
     	<section>
       		<div>
       			<label htmlFor="search">Your Location</label>
-      			<input type="text" value={this.state.city} placeholder="Enter Your Location" onChange={this.handleChange} />
+      			<input type="text" value={this.state.citySearched} placeholder="Enter Your Location" onChange={this.handleChange} searchedCity={this.props.citySearched}/>
       		</div>
-      		<h5><i className="fa fa-map-marker" aria-hidden="true"></i>Hajipur, India, 11:13 PM</h5>
+      		<h5><i className="fa fa-map-marker" aria-hidden="true"></i>{this.props.city}, India, 11:13 PM</h5>
       	</section>
     );
   }

@@ -7,19 +7,14 @@ class Maincontainer extends React.Component {
 	constructor(){
 	    super();
 	    this.state= {
-	      name: 'sp',
-	      dataWeather: {
-	        coord: {
-	          lon: null
-	        }
-	      }
+
 	    }
 	 }
    render() {
       return (
          <main className="main-container">
             <Header/>
-         	<Location/>
+         	<Location city={this.props.city} searchedCity={this.props.searchedCity}/>
          	<Resultcontainer/>
          </main>
       );
