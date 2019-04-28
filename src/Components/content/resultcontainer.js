@@ -7,16 +7,18 @@ class Resultcontainer extends React.Component {
     if (this.props.weatherdata.city){
 
         data = this.props.weatherdata;
-        dataList = data.list.slice(0, 5);
+        dataList = data.list.slice(0, 10);
         return (
          <section className="result-grid">
             
-            <h4><i className="fa fa-map-marker" aria-hidden="true"></i>{ data.city.name }, { data.city.country }, 11:13 PM</h4>
+            <h4><i className="fa fa-map-marker" aria-hidden="true"></i>{ data.city.name }, { data.city.country }, {`${new Date()}`}</h4>
             {dataList.map((item, index) => {
                 return <div className="result-tile">
                             <div className="date">{item.dt_txt}</div>
-                            <div className={`icon-holder icon-${item.weather[0].icon}`}></div>
-                            <div className="temperature">{item.main.temp}</div>
+                            <div className="icon-holder">
+                                <img src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`} />
+                            </div>
+                            <div className="temperature">{`${item.main.temp - 273.15}`} °C</div>
                         </div>
             })}
             

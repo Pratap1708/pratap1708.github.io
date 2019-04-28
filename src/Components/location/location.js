@@ -37,12 +37,7 @@ class Locaion extends Component {
 	        const response = res.data;
 	        this.setState({
 	        	data: response,
-	          // temperature: response.list[0].main.temp,
-	          // city: response.city.name,
-	          // country: response.list[0].sys.country,
-	          // humidity: response.list[0].main.humidity,
-	          // description: response.list[0].weather[0].description,
-	          error: ""
+	          	error: ""
 	        })
 
 	      })

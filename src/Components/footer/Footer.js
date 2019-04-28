@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
   	<footer>
-  		<span>Made by Saurabh for Learning Purpose</span>
+  		<i class="fa fa-copyright" aria-hidden="true"></i><span> Made by Saurabh for Elevate</span>
     </footer>
   )
 }

@@ -1,15 +1,14 @@
 @import "./Components/header/header.scss";
-@import "./Components/content/maincontainer.scss";
+@import "./Components/content/resultcontainer.scss";
 @import "./Components/location/location.scss";
 @import "./Components/footer/footer.scss";
 
 #root {
   background: #a56;
-
 }
 
 .App {
-  min-height: 800px;
+  min-height: 900px;
   background: grey;
   margin: 0 auto;
   Padding: 0 60px;

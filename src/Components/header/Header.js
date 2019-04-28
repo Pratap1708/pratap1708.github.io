@@ -11,9 +11,9 @@ export default function ReactHeader() {
   		<span>CLOUD.CO</span>
       <ul className="link-container">
       	<li>
-      		<i className="fa fa-clock"></i>About us
+      		<i className="fa fa-clock"></i>ABOUT US
       	</li>
-      	<li>LOCATION</li>
+      	<li><i class='fa fa-globe-asia'></i>LOCATION</li>
       	<li>MAP</li>
       </ul>
     </header>

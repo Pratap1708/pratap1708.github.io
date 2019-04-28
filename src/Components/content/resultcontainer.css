@@ -1,0 +1,17 @@
+.result-grid {
+  margin-top: 50px; }
+
+.result-grid .result-tile {
+  margin-top: 30px;
+  width: 19.5%;
+  float: left;
+  text-align: center;
+  min-height: 175px;
+  border: 1px solid #000; }
+
+.result-grid .result-tile .date {
+  margin: 25px 0;
+  font-size: 18px; }
+
+.result-grid .fa {
+  margin-right: 10px; }
