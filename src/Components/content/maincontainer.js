@@ -10,12 +10,18 @@ class Maincontainer extends React.Component {
 
 	    }
 	 }
+
+// handleSearchedCity ( citySearched ) {
+
+// 	this.props.searchedCity (citySearched);
+// }
+
    render() {
       return (
          <main className="main-container">
             <Header/>
-         	<Location city={this.props.city} searchedCity={this.props.searchedCity}/>
-         	<Resultcontainer/>
+         	<Location  />
+         	<Resultcontainer />
          </main>
       );
    }

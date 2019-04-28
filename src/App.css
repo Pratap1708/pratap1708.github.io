@@ -1,21 +1,31 @@
-.link-container {
+header span {
+  font-weight: 700; }
+
+header .link-container {
   margin-top: 0;
   background: grey;
-  display: inline-block; }
-  .link-container li {
+  display: inline-block;
+  margin-left: 50px; }
+  header .link-container li {
     color: #fff;
     list-style: none;
     display: inline-block;
     margin: 30px 20px; }
-    .link-container li .fa {
+    header .link-container li .fa {
       margin-right: 10px; }
 
-.main-container .result-tile {
+.result-grid .result-tile {
   width: 19%;
   float: left;
   text-align: center;
   min-height: 300px;
   border: 1px solid #000; }
+  .result-grid .result-tile .date {
+    margin: 25px 0;
+    font-size: 18px; }
+
+.result-grid .fa {
+  margin-right: 10px; }
 
 input {
   font-size: 60px;
@@ -24,20 +34,36 @@ input {
   border: 0;
   border-bottom: 5px solid #fff;
   display: block;
-  margin: 25px 0; }
+  margin: 25px 0;
+  color: #ffb; }
+
+.search-btn {
+  padding: 20px 40px;
+  margin: 10px 0;
+  font-size: 20px;
+  background: #d6580fbf;
+  color: #fff;
+  outline: none;
+  border: 0; }
 
 ::placeholder {
   color: #ff9;
-  text-decoration: italics; }
+  font-style: italic; }
+
+footer {
+  position: fixed;
+  bottom: 5px;
+  font-size: 12px;
+  font-style: italic; }
 
 #root {
   background: #a56; }
 
 .App {
-  min-height: 1500px;
+  min-height: 800px;
   background: grey;
   margin: 0 auto;
-  Padding: 0 40px;
+  Padding: 0 60px;
   color: #fff; }
 
 .App-header {

@@ -6,8 +6,18 @@ input {
 	border-bottom : 5px solid #fff;
 	display: block;
 	margin: 25px 0;
+	color: #ffb;
+}
+.search-btn {
+	padding : 20px 40px;
+	margin: 10px 0;
+	font-size: 20px;
+	background: #d6580fbf;
+	color: #fff;
+	outline: none;
+	border: 0;
 }
 ::placeholder {
   color: #ff9;
-  text-decoration: italics;
+  font-style: italic;
 }

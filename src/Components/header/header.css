@@ -1,11 +1,15 @@
-.link-container {
+header span {
+  font-weight: 700; }
+
+header .link-container {
   margin-top: 0;
   background: grey;
-  display: inline-block; }
-  .link-container li {
+  display: inline-block;
+  margin-left: 50px; }
+  header .link-container li {
     color: #fff;
     list-style: none;
     display: inline-block;
     margin: 30px 20px; }
-    .link-container li .fa {
+    header .link-container li .fa {
       margin-right: 10px; }

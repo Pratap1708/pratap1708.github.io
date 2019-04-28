@@ -2,40 +2,30 @@ import React, { Component } from 'react';
 
 class Resultcontainer extends React.Component {
    render() {
-      return (
+    let data = '';
+    let dataList= '';
+    if (this.props.weatherdata.city){
+
+        data = this.props.weatherdata;
+        dataList = data.list.slice(0, 5);
+        return (
          <section className="result-grid">
-            <div className="result-tile">
-            	<div className="date">17</div>
-            	<div className="icon-holder"></div>
-            	<div className="temperature"></div>
-            </div>
-            <div className="result-tile">
-            	<div className="date">18</div>
-            	<div className="icon-holder"></div>
-            	<div className="temperature"></div>
-            </div>
-            <div className="result-tile">
-            	<div className="date">19</div>
-            	<div className="icon-holder"></div>
-            	<div className="temperature"></div>
-            </div>
-            <div className="result-tile">
-            	<div className="date">20</div>
-            	<div className="icon-holder"></div>
-            	<div className="temperature"></div>
-            </div>
-            <div className="result-tile">
-            	<div className="date">21</div>
-            	<div className="icon-holder"></div>
-            	<div className="temperature"></div>
-            </div>
-            <div className="result-tile">
-            	<div className="date">22</div>
-            	<div className="icon-holder"></div>
-            	<div className="temperature"></div>
-            </div>
+            
+            <h4><i className="fa fa-map-marker" aria-hidden="true"></i>{ data.city.name }, { data.city.country }, 11:13 PM</h4>
+            {dataList.map((item, index) => {
+                return <div className="result-tile">
+                            <div className="date">{item.dt_txt}</div>
+                            <div className={`icon-holder icon-${item.weather[0].icon}`}></div>
+                            <div className="temperature">{item.main.temp}</div>
+                        </div>
+            })}
+            
          </section>
       );
+    }
+     else return(
+        <section> <h2><em>Search you City by above Input field to get Weather Updates!!!</em></h2></section>
+    ); 
    }
 }
 

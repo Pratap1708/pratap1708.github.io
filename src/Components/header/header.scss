@@ -1,15 +1,21 @@
-.link-container {
-	margin-top: 0;
-	background: grey;
-	display: inline-block;
-
-	li {
-		color: #fff;
-		list-style: none;
+header {
+	span {
+		font-weight: 700;
+	}
+	.link-container {
+		margin-top: 0;
+		background: grey;
 		display: inline-block;
-		margin: 30px 20px;
-		.fa {
-			margin-right: 10px;
+		margin-left: 50px;
+
+		li {
+			color: #fff;
+			list-style: none;
+			display: inline-block;
+			margin: 30px 20px;
+			.fa {
+				margin-right: 10px;
+			}
 		}
 	}
 }

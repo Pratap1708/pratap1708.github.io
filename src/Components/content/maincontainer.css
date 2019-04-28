@@ -1,6 +1,12 @@
-.main-container .result-tile {
+.result-grid .result-tile {
   width: 19%;
   float: left;
   text-align: center;
   min-height: 300px;
   border: 1px solid #000; }
+  .result-grid .result-tile .date {
+    margin: 25px 0;
+    font-size: 18px; }
+
+.result-grid .fa {
+  margin-right: 10px; }
