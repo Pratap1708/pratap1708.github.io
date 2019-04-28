@@ -18,7 +18,7 @@ class Resultcontainer extends React.Component {
                             <div className="icon-holder">
                                 <img src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`} />
                             </div>
-                            <div className="temperature">{`${item.main.temp - 273.15}.toFixed(2)`} °C</div>
+                            <div className="temperature">{`${item.main.temp - 273}`}°C</div>
                         </div>
             })}
             
